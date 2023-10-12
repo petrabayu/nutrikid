@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrikid</title>
+    <!-- Bootstrap Font CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Google Font Noto Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Native CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navigation bar">
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/images/logo-nutrikid-vertical.png" alt="logo"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse  justify-content-between" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Konsultasi</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Artikel</a>
+            </li>
+          </ul>
+          <form class="form-inline">
+            <img src="/images/avatarresponden2.png" class="rounded" alt="avatar">
+            <a href="#" class="btn btn-sm" id="navbutton" role="button" aria-pressed="true">Halo Bunda</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+<!-- Search bar --> 
+<section class="search-bar">
+  <div class="form-group has-search">
+    <span class="bi bi-search form-control-feedback"></span>
+    <input type="text" class="form-control" placeholder="Cari Artikel">
+  </div>
+  <!-- Label Filter -->  
+    <div class="filter container-fluid">
+      <div class="row justify-content-between">
+        <div class="filter-pill col-md-3 badge rounded-pill bg-light">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">Kehamilan</label>
+        </div>
+        <div class="filter-pill col-md-3 badge rounded-pill bg-light">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">Lifestyle</label>
+        </div>
+        <div class="filter-pill col-md-3 badge rounded-pill bg-light">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+            <label class="form-check-label" for="flexRadioDefault3">Nutrisi</label>
+        </div>
+        <div class="filter-pill col-md-3 badge rounded-pill bg-light">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+            <label class="form-check-label" for="flexRadioDefault4">Parenting</label>
+        </div>
+      </div>
+    </div>
+</section>
+  <!--Articles -->
+    <section class="articles">
+      <div class="content-article row justify-content-center ">
+        <div class="card mb-3" style="max-width: 700px;">
+            <div class="row g-10">
+              <div class="col-md-4">
+                <img src="/images/Low-Fi Placeholder.png" class="card-body img-fluid rounded-start" alt="image card">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text"><small class="text-body-secondary"> September 2023 . 11 min</small></p>
+                  <h5 class="card-title">Pentingnya Gizi Seimbang dalam Kesehatan dan Kesejahteraan</h5>
+                  <p class="card-text">Pentingnya gizi seimbang tak dapat diabaikan dalam menjaga kesehatan dan kesejahteraan tubuh. Gizi yang mencakup karbohidrat, protein, lemak sehat, vitamin, dan mineral.</p>
+                  <div class="row align-baseline">
+                    <div class="col-md-2">
+                      <img src="/images/avatarresponden2.png" alt="avatardoctor">
+                    </div>
+                    <div class="col-md-8">
+                      <h6 clas="card-text"><small class="text-body-primary">Ratih Pratiwi Putri, M.Gizi</small></h6>
+                      <p class="card-text"><small class="text-body-secondary">Ahli Gizi di RSIA Sayang Anak Jakarta</small></p>
+                    </div>
+                    <div class="col-md-2 align-items-end">
+                      <i class="bi bi-link-45deg"></i>
+                      <i class="bi bi-three-dots-vertical"></i>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Footer -->
+<footer id="footer" class="footer-1">
+  <div class="main-footer widgets-dark typo-light">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="widget subscribe no-box">
+            <img class="img-fluid" src="/images/logo-nutrikid-text.png" alt="logofooter">
+            <p>XYZ Tower</p>
+            <p>Jl. Kemana Saja No. 15</p>
+            <p>Jakarta </p>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="widget no-box">
+            <h5 class="widget-title">About<span></span></h5>
+          <ul class="thumbnail-widget">
+            <li>
+            <div class="thumb-content"><a href="#.">FAQ</a></div> 
+            </li>
+            <li>
+            <div class="thumb-content"><a href="#.">Syarat dan Ketentuan</a></div> 
+            </li>
+            <li>
+            <div class="thumb-content"><a href="#.">Kebijakan Privasi</a></div> 
+            </li>
+            <li>
+            <div class="thumb-content"><a href="#.">Kebijakan Finansial</a></div> 
+            </li>
+          </ul>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="widget no-box">
+            <h5 class="widget-title">Collaboration<span></span></h5>
+            <ul class="thumbnail-widget">
+              <li>
+              <div class="thumb-content"><a href="#.">Karir</a></div> 
+              </li>
+              <li>
+              <div class="thumb-content"><a href="#.">Kerjasama</a></div> 
+              </li>
+              <li>
+              <div class="thumb-content"><a href="#.">Membership</a></div> 
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="widget no-box">
+            <h5 class="widget-title">Contact Us<span></span></h5>
+            <p><a href="mailto:info@domain.com" title="glorythemes">Email: nutrikid@gmail.com</a></p>
+            <p>Phone : +621 234 567 890</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row justify-content-between copyright">
+          <div class="col-6 ol-sm-3 text-left">
+            <p>Copyright Nutrikid © 2023. All rights reserved.</p>
+          </div>
+          <div class="col-6 col-sm-3 text-right">
+            <ul class="social-footer2">
+              <li class=""><a title="instagram" target="_blank" href="https://bit.ly/3m9avif"><img alt="youtube" width="30" height="30" src="/images/instagram logo.png"></a></li>
+              <li class=""><a href="" target="_blank" title="Facebook"><img alt="Facebook" width="30" height="30" src="/images/facebook logo.png"></a></li>
+              <li class=""><a href="" target="_blank" title="Linkedin"><img alt="Twitter" width="30" height="30" src="./images/linkedin logo.png"></a></li>
+            </ul>  
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    </footer>
+</body>
+</html>
