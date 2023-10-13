@@ -1,0 +1,963 @@
+* {
+    font-family: "noto sans";
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Header */
+
+.navbox {
+    background-color: #cfe4fa;
+    /* padding: 25px 92.2px; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 96px;
+}
+
+.logo {
+    overflow: visible;
+    width: 128px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.nav-link {
+    color: #7a7a7a;
+    text-align: left;
+    font: 700 20px/150% "noto sans";
+}
+
+.buttonbox {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-end;
+    width: 201px;
+    height: 46px;
+}
+
+.login {
+    color: #7a7a7a;
+    text-align: left;
+    font: 700 20px/150% "noto sans", sans-serif;
+    cursor: pointer;
+}
+
+.signup {
+    background-color: #ab87ff;
+    border-radius: 12px;
+    padding: 8px 16px 8px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    width: 123.5px;
+    color: #ffffff;
+    text-align: left;
+    font: 700 20px/150% "noto sans", sans-serif;
+    cursor: pointer;
+}
+
+.collapse-nav {
+    background-color: #CFE4FA;
+    padding: 20px 30px;
+    z-index: 99;
+}
+
+.drop-box {
+    padding: 25px 92.2px;
+}
+
+
+/* Section Banner  */
+
+.bannerbox {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 48px;
+    gap: 64px;
+    align-items: center;
+}
+
+.imagebanner {
+    position: relative;
+    overflow: visible;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgelipse {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.imgdoctor {
+    position: absolute;
+    top: 20px;
+    right: 15%;
+}
+
+.textbanner {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.ctaphrase {
+    color: #000000;
+    text-align: left;
+    font: var(--web-large-title, 600 40px/52px "noto sans", sans-serif);
+    position: relative;
+    width: 455px;
+}
+
+.cta {
+    background: var(--nutrikid-primary-purple-1, #ab87ff);
+    border-radius: var(--x-large, 8px);
+    padding: 5px 12px 5px 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta:hover, .ctatext:hover {
+    color: #115EA3;
+    cursor: pointer;
+}
+
+.ctatext {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    color: #ffffff;
+    text-align: left;
+    font: 600 24px/32px "noto sans", sans-serif;
+    align-items: center;
+}
+
+/* Program Section */
+
+.programbox {
+    background-color: #f9fbfd;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 32px 0px;
+    margin: 0px 48px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.programphrase {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.programphrase1 {
+    color: #000000;
+    text-align: left;
+    font: 600 40px/52px "noto sans", sans-serif;
+}
+
+.programphrase2 {
+    color: #000000;
+    text-align: left;
+    font: 600 24px/32px "noto sans", sans-serif;
+}
+
+.contentprogram {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: 100%;
+    overflow: visible;
+    padding: 32px;
+}
+
+.program1 {
+    background: #ffffff;
+    border-radius: 5px;
+    gap: 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.program1:hover {
+    cursor: pointer;
+}
+
+.imgpg1 {
+    border-radius: 10px;
+    height: 169px;
+    object-fit: cover;
+}
+
+.titleprogram1 {
+    color: #000000;
+    text-align: left;
+    font: 600 20px/28px "noto sans", sans-serif;
+}
+
+.harga {
+    display: flex;
+    justify-content: center;
+}
+
+/* Artikel Section */
+
+.artikelbox {
+    background:#f9fbfd;
+    padding: 64px 0px 64px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    overflow: scroll;
+}
+
+.artikelbox::-webkit-scrollbar {
+    display: none;
+}
+
+.artikelphrase {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 48px;
+}
+
+.artikelphrase1 {
+    color: #000000;
+    text-align: left;
+    font: 600 40px/52px "noto sans", sans-serif;
+    text-align: center;
+}
+
+.artikelphrase2 {
+    color: #000000;
+    text-align: left;
+    font: 600 24px/32px "noto sans", sans-serif;
+    text-align: center;
+}
+
+.contentartikel {
+    padding: 0px 32px 0px 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.artikel1 {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: auto;
+}
+he
+.artikel1:hover {
+    cursor: pointer;
+}
+
+.imgart1 {
+    background: linear-gradient(to left, #d1d9e2, #d1d9e2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 523px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    object-fit: cover;
+}
+
+.textartikel1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+}
+
+.penulisartikel1 {
+    color: #000000;
+    text-align: left;
+    font: 600 16px/22px "noto sans", sans-serif;
+    width: auto;
+}
+
+.tanggalartikel1 {
+    color: #000000;
+    text-align: left;
+    font: 600 16px/22px "noto sans", sans-serif;
+    width: auto;
+}
+
+.judulartikel1 {
+    color: #000000;
+    text-align: left;
+    font: 600 24px/32px "noto sans", sans-serif;
+    width: auto;
+}
+
+.briefartikel1 {
+    color: #000000;
+    text-align: left;
+    font: 400 16px/22px "noto sans", sans-serif;
+    width: auto;
+    height: auto;
+}
+
+.artikellabel {
+    background:#f9fbfd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    left: 51px;
+    top: 17px;
+}
+
+.viewlabel {
+    background:#e6e9ec;
+    border-radius: 50px;
+    padding: 2px 6px 2px 6px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+    justify-content: flex-start;
+    height: 22px;
+}
+
+.dotbox {
+    background: #7c8b9d;
+    border-radius: 50px;
+    width: 8px;
+    height: 8px;
+    overflow: hidden;
+}
+
+.most-viewed {
+    color: #000000;
+    text-align: left;
+    font: 600 15px/22px "Inter", sans-serif;
+}
+
+.smallartikelbox {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: auto;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    height: auto;
+    width: auto;
+}
+
+.artikel2 {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+}
+
+.artikel2:hover {
+    cursor: pointer;;
+}
+
+.imgart2 {
+    background: linear-gradient(to left, #d1d9e2, #d1d9e2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    width: auto;
+    height: 194.5px;
+    object-fit: cover;
+}
+
+.textartikel2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+}
+
+.penulisartikel2 {
+    color: #000000;
+    text-align: left;
+    font:700 14px/20px "noto sans", sans-serif;
+    width: auto;
+}
+
+.tanggalartikel2 {
+    color: #000000;
+    text-align: left;
+    font: 600 14px/20px "noto sans", sans-serif;
+    width: auto;
+}
+
+.judulartikel2 {
+    color: #000000;
+    text-align: left;
+    font: 600 20px/28px "noto sans", sans-serif;
+    width: auto;
+}
+
+.artikel3 {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+}
+
+/* Testimoni section */
+
+.testimonibox {
+    background:#f9fbfd;
+    margin: 48px;
+    padding: 32px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.testimoni {
+    color: #000000;
+    text-align: left;
+    font: 600 40px/52px "noto sans", sans-serif;
+    position: relative;
+}
+
+#description {
+    color: #000000;
+    text-align: center;
+    font: 600 24px/32px "noto sans", sans-serif;
+    position: relative;
+    width: 90%;
+    padding: 0px 32px 0px 32px;
+}
+
+
+
+.contentbox {
+    padding: 0px 32px 0px 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: auto;
+}
+
+.contenttestimoni {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.testimoni1 {
+    background:#f9fbfd;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: auto;
+}
+
+.texttestimoni1 {
+    color: #000000;
+    text-align: left;
+    font: 400 16px/22px "noto sans", sans-serif;
+    width: auto;
+}
+
+.deskripsiuser {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    position: relative;
+    gap: 10px;
+    width: auto;
+    left: 1rem;
+    right: 1rem;
+}
+
+.imgtestimoni {
+    background: linear-gradient(to left, #7c8b9d, #7c8b9d);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.namauser {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.nikita {
+    color: #000000;
+    text-align: left;
+    font: 700 16px/22px "noto sans", sans-serif;
+}
+
+.pekerjaan {
+    color: #000000;
+    text-align: left;
+    font: 600 16px/22px "noto sans", sans-serif;
+}
+
+/* Footer */
+
+.footer {
+    background:#cfe4fa;
+    padding: 64px 0px 64px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    height: 10;
+}
+
+.tentang {
+    padding: 0px 32px 0px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.nutrikiddetails {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.alamatbox {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+
+.logo-footer {
+    overflow: visible;
+    width: 100%;
+}
+
+.alamatnutrikid {
+    color: #000000;
+    text-align: left;
+    font: 400 16px/22px "noto sans", sans-serif;
+}
+
+.aboutlist {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.about {
+    color: #000000;
+    text-align: left;
+    font: bolder 16px/22px "noto sans";
+}
+
+.list1 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.textlist1 {
+    color: #000000;
+    text-align: left;
+    font: bolder 12px/16px "noto sans";
+   
+}
+
+.contactlist {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.credit {
+    border-style: solid;
+    border-color: #d1d9e2;
+    border-width: 1px 0px 0px 0px;
+    padding: 12px 0px 12px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+}
+
+.publish {
+    color: #000000;
+    text-align: left;
+    font: 700 14px/20px "noto sans", sans-serif;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+/* Custom Responsive Section */
+
+@media only screen and (max-width: 1200px) {
+    .artikelbox {
+        max-width: 1200px;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    /*Navbar 992 */
+    .navbox {
+        padding: 0px 0px;
+    }
+    .drop-box {
+        padding: 20px 20px;
+    }
+
+    /* Banner 992 */
+
+    .bannerbox {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Program 992 */
+
+    .programphrase {
+       gap: 12px;
+    }
+
+    .programphrase1, .programphrase2 {
+        text-align: center;
+    }
+
+    .contentprogram {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* artikel 992 */
+    .contentartikel {
+        flex-direction: column;
+    }
+
+    .imgart1 {
+        height: 450px;
+    }
+
+    .row1 {
+        flex-direction: column;
+    }
+
+    .imgart2 {
+        max-width: 250px;
+    }
+
+    .artikel2 {
+        flex-direction: row;
+    }
+
+    /* Testimoni 992 */
+
+    
+    .contenttestimoni {
+        flex-direction: column;
+    }
+
+    /* Footer 992 */
+
+    .nutrikiddetails {
+        flex-direction: column;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .aboutlist {
+        width: 50%;
+    }
+
+    .alamatbox {
+        width: 50%;
+    }
+
+    .contactlist {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Banner 768 */
+
+    /* program 768 */
+
+}
+
+@media only screen and (max-width: 576px) {
+     /* Banner 576 */
+        .bannerbox {
+            width: 300px;
+            margin: auto;
+            margin-bottom: 48px;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 28px;            
+        }
+
+        .imagebanner {
+            height: 225px;
+        }
+
+        .imgelipse {
+            height: 213px;
+        }
+        
+        .imgdoctor {
+            height: 206px;
+        }
+
+        .textbanner {
+            gap: 16px;
+        }
+
+        .ctaphrase {
+            font-size: 20px;
+            line-height: 26px;
+            width: 300px;
+        }
+
+        .ctatext {
+            font-size: 12px;
+        }
+
+        /* program 576 */
+
+        .programbox {
+            margin: auto;
+        }
+
+        .programphrase1 {
+
+            font-size: 20px;
+            line-height: 26px;
+
+        }
+
+        .programphrase2 {
+
+            font-size: 12px;
+            line-height: 16px;
+
+        }
+
+        .contentprogram {
+            padding: 0px 30px;
+        }
+
+        .titleprogram1 {
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .textisi {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        /* Artikel 576 */
+
+        .artikelbox {
+            gap: 24px;
+        }
+
+        .artikelphrase {
+            margin: 24px;
+            gap: 16px;
+        }
+
+        .contentartikel {
+            padding: 16px;
+        }
+
+        .imgart1 {
+            height: 200px;
+        }
+
+        .penulisartikel1, .tanggalartikel1, .briefartikel1 {
+            font-size: 14px;
+        }
+
+        .judulartikel1 {
+            font-size: 16px;
+        }
+
+        .imgart2 {
+            height: 100px;
+            max-width: 130px;
+        }
+
+        .penulisartikel2, .tanggalartikel2 {
+            font-size: 10px;
+        }
+
+        .judulartikel2 {
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+        .artikelphrase1 {
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        .artikelphrase2 {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        /* Testimoni 576 */
+
+        .testimonibox {
+            margin: 12px;
+            padding: 0px 30px;
+        }
+
+        .testimoni {
+            font-size: 20px;
+        }
+
+        #description {
+            font-size: 12px;
+            line-height: 16px;
+            width: 100%;
+            padding: 0;
+        }
+
+        .namauser {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .texttestimoni1 {
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+        .deskripsiuser {
+            left: 0;
+            right: 0;
+        }
+
+        /* footer */
+
+        .credit {
+            flex-direction: column-reverse;
+            gap: 24px;
+        }
+}
+
+
+
