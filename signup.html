@@ -44,7 +44,7 @@
         <!-- ---------------------right-box--------------------- -->
         <div class="col-md rounded-4 mx-2 vh-50">
           <div class="">
-            <form id="login-form" class="">
+            <form id="signup-form" class="needs-validation">
               <img
                 src="./assets/logos/svg/nutrikid-with-text-landscape-blue-svg.svg"
                 alt=""
@@ -54,50 +54,64 @@
               <h1 class="fs-2">Sign Up</h1>
 
               <div class="mb-2 mt-4">
-                <label for="exampleFormControlInput1" class="form-label mb-1"
-                  >Nama</label
-                >
+                <label for="name" class="form-label mb-1">Nama</label>
                 <input
+                  id="name"
                   type="text"
+                  name="name"
                   class="form-control form-control-sm border-success"
-                  id="exampleFormControlInput1"
                   placeholder="Masukkan Nama Anda"
+                  required
                 />
               </div>
               <div class="mb-2">
-                <label for="exampleFormControlInput1" class="form-label mb-1"
-                  >Email</label
-                >
+                <label for="email" class="form-label mb-1">Email</label>
                 <input
+                  id="email"
                   type="email"
+                  name="email"
                   class="form-control form-control-sm border-success"
-                  id="exampleFormControlInput1"
                   placeholder="Masukkan Email Anda"
+                  required
                 />
               </div>
               <div class="mb-2">
-                <label for="exampleFormControlInput1" class="form-label mb-1"
-                  >Password</label
-                >
+                <label for="password" class="form-label mb-1">Password</label>
                 <input
+                  id="password"
                   type="password"
+                  name="password"
                   class="form-control form-control-sm border-success"
-                  id="exampleFormControlInput1"
                   placeholder="Masukkan Password Anda"
+                  pattern=".+@"
+                  required
                 />
+                <div id="warning-msg" class="invalid-tooltip">
+                  Password harus memiliki minimal 8 karakter, terdiri dari huruf
+                  kecil, huruf besar, dan angka.
+                </div>
               </div>
               <div class="mb-1">
-                <label for="exampleFormControlInput1" class="form-label mb-1"
+                <label for="retypePassword" class="form-label mb-1"
                   >Verifikasi Password</label
                 >
                 <input
+                  id="retypePassword"
                   type="password"
                   class="form-control form-control-sm border-success"
-                  id="exampleFormControlInput1"
+                  name="retypePassword"
                   placeholder="Masukkan Ulang Password Anda"
+                  required
                 />
+                <div id="warning-pass-match-msg" class="invalid-tooltip">
+                  Password yang kamu masukkan salah
+                </div>
               </div>
-              <button class="btn btn-primary w-100 py-2 mt-4" type="submit">
+              <button
+                id="btn-submit"
+                class="btn btn-primary w-100 py-2 mt-4"
+                type="submit"
+              >
                 Sign Up
               </button>
               <div class="input-group mt-3">
@@ -118,6 +132,7 @@
       </div>
     </div>
 
+    <script src="./assets/js/signup.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
