@@ -1,6 +1,6 @@
 /*===ALL==*/
 *{
-  margin: 0%;
+  margin: 0;
   padding: 0%;
   font-family: 'Noto Sans', sans-serif;
 }
@@ -28,61 +28,86 @@
   }
 
 /*===SEARCH===*/
-.search-bar {
-  width: 50%;
-  margin: 100px auto;
-  width: 50%;
-    margin: auto;
-    margin-top: 150px;
-    margin-bottom: 50px;
+.search{
+  margin:10% auto;
+  padding: 1%;
+  border: 1px solid #B4E1FF;
+  border-radius: 20px;
+  width: 30%;
 }
 
-.form-group {
-  border-radius: 100px;
-  background: #E6E9EC;
-  /* Shadow/XSM */
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-}
-
-/* Bootstrap 5 text input with search icon */
-.has-search .form-control {
-  padding-left: 2.375rem;
-  border-radius: 100px;
-  background: #E6E9EC;
-  /* Shadow/XSM */
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-}
-
-.has-search .form-control-feedback {
-  position: absolute;
-  z-index: 2;
-  display: block;
-  width: 2.375rem;
-  height: 2.375rem;
-  line-height: 2.375rem;
-  text-align: center;
-  pointer-events: none;
-  color: #aaa;
+#textBox{
+  border: none;
 }
 
 /*===ARTICLES===*/
-.articles {
-  margin:0 auto;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 }
 
-.content-article {
-  margin:0 auto;
-}
-/*===FILTER===*/
-.filter {
-  margin-top: 20px;
-}
-
-.filter-pill {
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 2%;
+  max-width: 30rem;
   width: fit-content;
-  color:#252525;
-  align-items: center;
-  margin:3%;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.boxtext {
+  margin: 0;
+  padding: 1%;
+  width: 100%;
+  height: fit-content;
+}
+
+.boxtext h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.boxtext h6 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.boxtext h5 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.boxtext p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.boxtext img {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+.boximage {
+  margin: 0;
+  padding: 1%;
+  width: 100%;
+  height: fit-content;
+}
+
+.boximage img{
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+  max-height: 20rem;
+  border-radius: 10px;
 }
 
 
