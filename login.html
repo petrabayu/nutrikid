@@ -11,7 +11,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/css/login.css" />
+    <link rel="stylesheet" href="login.css" />
   </head>
   <body>
     <!-- ---------------------main-container--------------------- -->
@@ -44,7 +44,7 @@
         <!-- ---------------------right-box--------------------- -->
         <div class="col-md rounded-4 mx-2 vh-50">
           <div class="">
-            <form id="login-form" class="">
+            <form id="login-form" action="index.html" class="">
               <img
                 src="./assets/logos/svg/nutrikid-with-text-landscape-blue-svg.svg"
                 alt=""
@@ -61,8 +61,9 @@
                 <input
                   type="email"
                   class="form-control border-success"
-                  id="exampleFormControlInput1"
+                  id="email"
                   placeholder="Masukkan Email Anda"
+                  pattern=".+[a-zA-Z].+@.+\..{3}"
                   required
                 />
               </div>
@@ -73,7 +74,7 @@
                 <input
                   type="password"
                   class="form-control border-success"
-                  id="exampleFormControlInput1"
+                  id="password"
                   placeholder="Masukkan Password Anda"
                   required
                 />
@@ -81,7 +82,7 @@
               <div class="text-end">
                 <p><a class="link-offset-1" href="#">Lupa password ?</a></p>
               </div>
-              <button class="btn btn-primary w-100 py-2" type="submit">
+              <button class="btn btn-primary w-100 py-2" id="login-btn" type="submit">
                 Login
               </button>
               <div class="input-group mt-3">
@@ -107,5 +108,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="login.js"></script>
   </body>
 </html>

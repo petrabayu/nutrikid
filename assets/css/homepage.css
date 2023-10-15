@@ -64,7 +64,17 @@
     text-align: left;
     font: 700 20px/150% "noto sans", sans-serif;
     cursor: pointer;
+    
 }
+
+a:link {
+    text-decoration: none;
+  }
+
+.login a, .signup a {
+    color: #ffffff;
+}
+
 
 .signup {
     background-color: #ab87ff;
