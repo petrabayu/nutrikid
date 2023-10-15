@@ -28,8 +28,14 @@
   }
 
 /*===SEARCH===*/
+.search-bar{
+  margin-top: 10%;
+  margin-bottom: 3%;
+  padding:0%;
+}
+
 .search{
-  margin:10% auto;
+  margin: 0 auto;
   padding: 1%;
   border: 1px solid #B4E1FF;
   border-radius: 20px;
