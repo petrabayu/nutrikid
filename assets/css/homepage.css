@@ -22,9 +22,10 @@
   
   .nav-link {
     color: var(--colors-grey-48, #7A7A7A);
-    font-family:'Noto Sans', sans-serif;
+    font-family:'noto sans';
     font-style: normal;
     font-weight: bold;
+    font-size: 20px;
   }
   
   #navbutton{
@@ -43,11 +44,11 @@
     object-fit: contain;
 }
 
-.nav-link {
+/* .nav-link {
     color: #7a7a7a;
     text-align: left;
     font: 700 20px/150% "noto sans";
-}
+} */
 
 .buttonbox {
     display: flex;
@@ -98,10 +99,14 @@ a:link {
     z-index: 99;
 }
 
-.drop-box {
-    padding: 25px 92.2px;
+.box-profile {
+    background-color: #B4E1FF;
 }
 
+#navbutton {
+    font-size: 14px;
+    padding: 4px 8px;
+}
 
 /* Section Banner  */
 

@@ -19,6 +19,7 @@
   font-family:'Noto Sans', sans-serif;
   font-style: normal;
   font-weight: bold;
+  font-size: 20px;  
 }
 
 #navbutton{
@@ -45,6 +46,60 @@
 #textBox{
   border: none;
 }
+
+/* Header Sync */
+.buttonbox {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-end;
+  width: 201px;
+  height: 46px;
+}
+
+.login {
+  color: #7a7a7a;
+  text-align: left;
+  font: 700 20px/150% "noto sans", sans-serif;
+  cursor: pointer;
+  
+}
+
+.login a:link, .signup a:link {
+  text-decoration: none;
+}
+
+
+.login a, .signup a {
+  color: #ffffff;
+}
+
+.signup {
+  background-color: #ab87ff;
+  border-radius: 12px;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  width: 123.5px;
+  color: #ffffff;
+  text-align: left;
+  font: 700 20px/150% "noto sans", sans-serif;
+  cursor: pointer;
+}
+
+.box-profile {
+  background-color: #B4E1FF;
+}
+
+#navbutton {
+  font-size: 14px;
+  padding: 4px 8px;
+}
+
 
 /*===ARTICLES===*/
 .container {
