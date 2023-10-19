@@ -12,17 +12,21 @@ btnSubmit.addEventListener("click", (event) => {
   retypePassword = newRegisterForm.retypePassword.value;
 
   const checkPassMessage = document.getElementById("warning-pass-match-msg");
-  //check if password and re-type password has same value
 
-  //check apakah password memenuhi syarat
-  if (validatePassword(newPassword)) {
-    if (newPassword === retypePassword) {
-      checkPassMessage.style.display = "none"; //display ketika password sesuai
+  if (newName === "") {
+    alert("Nama tidak boleh kosong");
+  } else {
+    if (validatePassword(newPassword)) {
+      //check apakah password memenuhi syarat
+      //check if password and re-type password has same value
+      if (newPassword === retypePassword) {
+        checkPassMessage.style.display = "none"; //display ketika password sesuai
 
-      //check user apakah emailnya sudah terdaftar atau belum
-      checkExistingEmail(newEmail);
-    } else {
-      checkPassMessage.style.display = "block"; //display ketika password tidak sesuai kriteri
+        //check user apakah emailnya sudah sesuai format dan terdaftar atau belum
+        checkEmailFormat(newEmail);
+      } else {
+        checkPassMessage.style.display = "block"; //display ketika password tidak sesuai kriteri
+      }
     }
   }
 });
@@ -47,6 +51,10 @@ function validatePassword(password) {
 }
 
 function postUser() {
+  //loading screen
+  const loadingScreen = document.getElementById("loading-screen");
+  loadingScreen.style.display = "flex";
+
   //data object untuk dikirim ke API
   let usersObjectData = {
     name: newName,
@@ -62,17 +70,33 @@ function postUser() {
   })
     .then((res) => {
       if (res.ok) {
-        return res.json();
       }
+      window.location.href = "register-success.html"; // Pindah ke halaman registrasi berhasil
     })
     .then(() => {
-      window.location.href = "index.html";
-      //pindah halaman setelah proses registrasi sukses/berhasil
-      // document.getElementById("form").reset(); //form akan mereset value
+      setTimeout(() => {
+        loadingScreen.style.display = "none";
+        window.location.href = "regiser-success.html";
+      }, 2000);
+
+      document.getElementById("form").reset(); //form akan mereset value
     })
     .catch((error) => {
       console.log(error);
     });
+}
+
+function checkEmailFormat(email) {
+  const regexEmail = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+  const result = regexEmail.test(email); //cek email format
+
+  if (result) {
+    checkExistingEmail(email);
+    return true;
+  } else {
+    alert("Email tidak sesuai format");
+    return false;
+  }
 }
 
 function checkExistingEmail(email) {
@@ -90,7 +114,6 @@ function checkExistingEmail(email) {
       //memastikan bahwa belum ada email terdaftar
       if (userEmailAPI.length != 0) {
         // console.log(userEmailAPI);
-        //nanti ditambah alert
         document.getElementById("signup-form").reset();
         alert("Akun sudah terdaftar tidak perlu daftar lagi");
       } else {
