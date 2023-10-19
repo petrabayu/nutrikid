@@ -92,16 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </form> 
       </section>
-      <section class="container nutrikid-container">
-        <div class="card text-bg-light mb-3">
-          <div class="card-header">User Name</div>
-          <div class="card-body">
-            <p class="card-text">
-              ${articleData.comment}
-            </p>
-          </div>
-        </div>
-      </section>
         `;
 
     const commentList = document.getElementById("commentList");
