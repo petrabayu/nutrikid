@@ -1,36 +1,43 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const articleId = urlParams.get('id');
+document.addEventListener("DOMContentLoaded", function () {
+  const urlParams = new URLSearchParams(window.location.search);
+  const articleId = urlParams.get("id");
 
-    async function fetchArticle() {
-        try {
-            const response = await fetch(`https://6527c717931d71583df15db8.mockapi.io/api/v1/articles/${articleId}`);
-            const data = await response.json();
-            return data;
-        } catch (error) {
-            console.error('Error:', error);
-        }
+  async function fetchArticle() {
+    try {
+      const response = await fetch(
+        `https://6527c717931d71583df15db8.mockapi.io/api/v1/articles/${articleId}`
+      );
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error("Error:", error);
     }
+  }
 
-    async function fetchComments() {
-        try {
-            const response = await fetch(`https://6527c717931d71583df15db8.mockapi.io/api/v1/articles/${articleId}/comments`);
-            const data = await response.json();
-            return data;
-        } catch (error) {
-            console.error('Error:', error);
-        }
+  async function fetchComments() {
+    try {
+      const response = await fetch(
+        `https://6527c717931d71583df15db8.mockapi.io/api/v1/articles/${articleId}/comments`
+      );
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error("Error:", error);
     }
+  }
 
-    async function renderArticle() {
-        const articleData = await fetchArticle();
-        const commentsData = await fetchComments();
+  async function renderArticle() {
+    const articleData = await fetchArticle();
+    const commentsData = await fetchComments();
 
-        const articleContainer = document.getElementById('articleContainer');
-        articleContainer.innerHTML = `
+    const articleTitle = document.querySelector("title");
+    articleTitle.innerHTML = articleData.title;
+
+    const articleContainer = document.getElementById("articleContainer");
+    articleContainer.innerHTML = `
         <main>
         <div class="container nutrikid-container d-flex my-2">
-          <a class="fs-4" href="#"
+          <a class="fs-4" href="/mainpage-article.html"
             ><i
               class="nutrikid-icon-size bi bi-arrow-left p-0"
               style="font-size: 3rem"
@@ -97,13 +104,13 @@ document.addEventListener('DOMContentLoaded', function() {
       </section>
         `;
 
-        const commentList = document.getElementById('commentList');
-        commentsData.forEach(comment => {
-            const commentItem = document.createElement('li');
-            commentItem.textContent = comment.text;
-            commentList.appendChild(commentItem);
-        });
-    }
+    const commentList = document.getElementById("commentList");
+    commentsData.forEach((comment) => {
+      const commentItem = document.createElement("li");
+      commentItem.textContent = comment.text;
+      commentList.appendChild(commentItem);
+    });
+  }
 
-    renderArticle();
+  renderArticle();
 });
