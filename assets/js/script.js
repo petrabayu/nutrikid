@@ -11,6 +11,7 @@ if (profile) {
       <li><a class="dropdown-item" href="#">User Setting</a></li>
       <li><a class="dropdown-item" id="exit" href="#" onclick="logOut()">Sign out</a></li>
     </ul>`
+    
 } else {
     profileBox.innerHTML = `<div class="buttonbox">
     <div class="login"><a href="login.html">Login</a></div>
@@ -171,9 +172,3 @@ function setBigArt(articles) {
 
 getArticles()
 getBigArticles() 
-
-
-
-
-
-

@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+:root {
+  --neutral-light-color: #ffffff;
+  --neutral-gray-color: #374955;
+  --neutral-dark-color: #282828;
+  --primary-color: #b4e1ff;
+  --secondary-color: #ab87ff;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+.play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+.nutrikid-bg-primary {
+  background-color: var(--primary-color);
+}
+
+.nutrikid-small-size {
+  color: red;
+  margin: 0;
+  font-size: 0.75rem;
+  display: none;
+}
+
+#loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  color: white;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (max-width: 768px) {
+  .nutrikid-display {
+    display: none !important;
+  }
+  .logo-custom {
+    width: 128px;
+  }
+}
