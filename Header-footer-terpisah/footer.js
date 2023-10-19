@@ -2,7 +2,7 @@ class nutrikidFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <footer id="footer" class="footer-1">
-  <div class="main-footer widgets-dark typo-light">
+  <div class="main-footer">
     <div class="container">
       <div class="row">
 
