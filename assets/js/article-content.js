@@ -37,12 +37,12 @@ document.addEventListener("DOMContentLoaded", function () {
     articleContainer.innerHTML = `
         <main>
         <div class="container nutrikid-container d-flex my-2">
-          <a class="fs-4" href="/mainpage-article.html"
+          <button class="fs-4 nutrikid-no-btn" href="" onclick="history.back()"
             ><i
               class="nutrikid-icon-size bi bi-arrow-left p-0"
               style="font-size: 3rem"
             ></i
-          ></a>
+          ></button>
         </div>
         <section id="article-content">
           <article class="container nutrikid-container">
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <label for="floatingTextarea">Comments</label>
           </div>
           <div class="d-flex flex-row-reverse">
-            <button type="submit" class="btn btn-primary my-3">Submit</button>
+            <button type="submit" class="btn btn-primary my-3 disabled">Submit</button>
           </div>
         </form> 
       </section>
