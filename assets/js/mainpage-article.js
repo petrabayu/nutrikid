@@ -52,6 +52,9 @@ async function renderData() {
         const jobTitle = document.createElement('h6');
         jobTitle.textContent = article.jobTitle;
 
+        const showDetails = document.createElement('a');
+        showDetails.textContent = 'show details';
+        showDetails.href = `article-content.html?id=${article.id}`;
     
         boximage.appendChild(image);
         card.appendChild(boximage);
@@ -62,6 +65,7 @@ async function renderData() {
         boxtext.appendChild(avatar);
         boxtext.appendChild(name);
         boxtext.appendChild(jobTitle);
+        boxtext.appendChild(showDetails);
         card.appendChild(boxtext);
         container.appendChild(card);
     });
