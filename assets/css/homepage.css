@@ -260,18 +260,14 @@ a:link {
 
 .artikelbox {
     background:#f9fbfd;
-    padding: 64px 0px 64px 0px;
+    padding: 64px 0px;
+    margin: 0px 48px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 48px;
     align-items: center;
     justify-content: center;
     height: auto;
-    overflow: scroll;
-}
-
-.artikelbox::-webkit-scrollbar {
-    display: none;
 }
 
 .artikelphrase {
@@ -297,82 +293,22 @@ a:link {
     text-align: center;
 }
 
-.contentartikel {
-    padding: 0px 32px 0px 32px;
-    display: flex;
-    flex-direction: row;
-    gap: 48px;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    height: auto;
-    position: relative;
+.card-box {
+    padding: 32px;
 }
 
-.artikel1 {
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: auto;
-}
-he
-.artikel1:hover {
-    cursor: pointer;
-}
+.short-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    }
 
-.imgart1 {
-    background: linear-gradient(to left, #d1d9e2, #d1d9e2);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: 523px;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;
+.img-small {
     object-fit: cover;
+    max-height: 170px;
 }
 
-.textartikel1 {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-self: stretch;
-}
-
-.penulisartikel1 {
-    color: #000000;
-    text-align: left;
-    font: 600 16px/22px "noto sans", sans-serif;
-    width: auto;
-}
-
-.tanggalartikel1 {
-    color: #000000;
-    text-align: left;
-    font: 600 16px/22px "noto sans", sans-serif;
-    width: auto;
-}
-
-.judulartikel1 {
-    color: #000000;
-    text-align: left;
-    font: 600 24px/32px "noto sans", sans-serif;
-    width: auto;
-}
-
-.briefartikel1 {
-    color: #000000;
-    text-align: left;
-    font: 400 16px/22px "noto sans", sans-serif;
-    width: auto;
-    height: auto;
-}
 
 .artikellabel {
     background:#f9fbfd;
@@ -412,92 +348,6 @@ he
     font: 600 15px/22px "Inter", sans-serif;
 }
 
-.smallartikelbox {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    width: auto;
-}
-
-.row1 {
-    display: flex;
-    flex-direction: row;
-    gap: 48px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-self: stretch;
-    height: auto;
-    width: auto;
-}
-
-.artikel2 {
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-self: stretch;
-}
-
-.artikel2:hover {
-    cursor: pointer;;
-}
-
-.imgart2 {
-    background: linear-gradient(to left, #d1d9e2, #d1d9e2);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-    width: auto;
-    height: 194.5px;
-    object-fit: cover;
-}
-
-.textartikel2 {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-self: stretch;
-}
-
-.penulisartikel2 {
-    color: #000000;
-    text-align: left;
-    font:700 14px/20px "noto sans", sans-serif;
-    width: auto;
-}
-
-.tanggalartikel2 {
-    color: #000000;
-    text-align: left;
-    font: 600 14px/20px "noto sans", sans-serif;
-    width: auto;
-}
-
-.judulartikel2 {
-    color: #000000;
-    text-align: left;
-    font: 600 20px/28px "noto sans", sans-serif;
-    width: auto;
-}
-
-.artikel3 {
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    align-self: stretch;
-}
 
 /* Testimoni section */
 
@@ -827,122 +677,6 @@ footer .main-footer{
     margin: 12px 0px;
  }
 
-/* Footer */
-
-/* .footer {
-    background:#cfe4fa;
-    padding: 64px 0px 64px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: auto;
-    height: 10;
-}
-
-.tentang {
-    padding: 0px 32px 0px 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    width: 100%;
-}
-
-.nutrikiddetails {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    align-self: stretch;
-}
-
-.alamatbox {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    
-}
-
-.logo-footer {
-    overflow: visible;
-    width: 100%;
-}
-
-.alamatnutrikid {
-    color: #000000;
-    text-align: left;
-    font: 400 16px/22px "noto sans", sans-serif;
-}
-
-.aboutlist {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.about {
-    color: #000000;
-    text-align: left;
-    font: bolder 16px/22px "noto sans";
-}
-
-.list1 {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.textlist1 {
-    color: #000000;
-    text-align: left;
-    font: bolder 12px/16px "noto sans";
-   
-}
-
-.contactlist {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.credit {
-    border-style: solid;
-    border-color: #d1d9e2;
-    border-width: 1px 0px 0px 0px;
-    padding: 12px 0px 12px 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    align-self: stretch;
-}
-
-
-.publish {
-    color: #000000;
-    text-align: left;
-    font: 700 14px/20px "noto sans", sans-serif;
-}
-
-.social-icons {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    align-items: center;
-    justify-content: flex-start;
-} */
-
-
 /* Custom Responsive Section */
 
 @media only screen and (max-width: 1200px) {
@@ -965,6 +699,11 @@ footer .main-footer{
         align-items: center;
     }
     
+    /* artikel 992 */
+    /* .card-box {
+        max-height: max-content;
+    } */
+
     /* Program 992 */
 
     .programphrase {
@@ -980,27 +719,6 @@ footer .main-footer{
         flex-direction: column;
     }
 
-    /* artikel 992 */
-    .contentartikel {
-        flex-direction: column;
-    }
-
-    .imgart1 {
-        height: 450px;
-    }
-
-    .row1 {
-        flex-direction: column;
-    }
-
-    .imgart2 {
-        max-width: 250px;
-    }
-
-    .artikel2 {
-        flex-direction: row;
-    }
-
     /* Testimoni 992 */
 
     
@@ -1012,10 +730,11 @@ footer .main-footer{
 
 @media only screen and (max-width: 768px) {
 
-    /* Banner 768 */
+    /* Artikel 768 */
 
-    /* program 768 */
-
+    .card-box {
+        gap: 16px;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -1102,35 +821,6 @@ footer .main-footer{
             gap: 16px;
         }
 
-        .contentartikel {
-            padding: 16px;
-        }
-
-        .imgart1 {
-            height: 200px;
-        }
-
-        .penulisartikel1, .tanggalartikel1, .briefartikel1 {
-            font-size: 14px;
-        }
-
-        .judulartikel1 {
-            font-size: 16px;
-        }
-
-        .imgart2 {
-            height: 100px;
-            max-width: 130px;
-        }
-
-        .penulisartikel2, .tanggalartikel2 {
-            font-size: 10px;
-        }
-
-        .judulartikel2 {
-            font-size: 12px;
-            line-height: 14px;
-        }
 
         .artikelphrase1 {
             font-size: 20px;
@@ -1142,6 +832,7 @@ footer .main-footer{
             line-height: 16px;
         }
 
+       
         /* Testimoni 576 */
 
         .testimonibox {
