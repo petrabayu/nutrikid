@@ -1,0 +1,99 @@
++<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/signup.css" />
+    <style>
+      /* CSS untuk overlay loading */
+      .overlay {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      }
+
+      .loader {
+        border: 5px solid #f3f3f3;
+        border-top: 5px solid #3498db;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 2s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ---------------------main-container--------------------- -->
+    <div
+      class="container d-flex justify-content-center align-items-center min-vh-100"
+    >
+      <!-- ---------------------singup-container--------------------- -->
+      <div class="row border rounded-5 p-4 mx-2 bg-white shadow box-area w-75">
+        <!-- ---------------------left-box--------------------- -->
+        <div
+          class="col-md rounded-4 mx-2 d-flex justify-content-center align-items-center flex-column nutrikid-bg-primary"
+        >
+          <div class="d-block">
+            <img
+              src="./assets/images/login-register/background-item-login-register.png"
+              class="img-fluid"
+              alt="./assets/images/login-register/background-item-login-register"
+            />
+          </div>
+          <div class="d-block position-absolute">
+            <img
+              class="img-fluid mx-auto d-block"
+              src="./assets/images/login-register/background-item-signup.png"
+              alt=""
+              style="width: 20rem"
+            />
+            <h1 class="fs-3">Selamat, Akun anda telah berhasil dibuat</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay" id="overlay">
+      <div class="loader"></div>
+    </div>
+
+    <script>
+      setTimeout(() => {
+        document.getElementById("overlay").style.display = "none";
+        setTimeout(() => {
+          document.getElementById("overlay").style.display = "flex";
+          window.location.href = "login.html";
+        }, 2000);
+      }, 1000);
+    </script>
+    <script src="./assets/js/signup.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -3,37 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <title>
+      Nutrikid - Konsultasi Bersama Konsultan Nutrikid yang Berpengalaman
+    </title>
+    <link rel="icon" href="/assets/logos/svg/nutrikid-icon-only-blue-svg.svg" />
+    <!-- Google Font Noto Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/homepage.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/Header-footer-terpisah/footer.css"
+    />
   </head>
   <body>
-    <header class="navbox">
-      <div class="nav-button">
-        <div class="horizontal-container">
-          <a href="#landingPage" class="dashboard"
-            ><img src="./assets/icon/Logo.png" alt="Logo" class="logo"
+    <header class="navigation bar">
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img class="logo" src="assets/images/Logo.png" alt="logo"
           /></a>
-          <nav class="navigation">
-            <a href="#programPage" class="program">Program</a>
-            <a href="#konsultasiPage" class="konsultasi">Konsultasi</a>
-            <a href="#artikelPage" class="artikel">Artikel</a>
-          </nav>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="onDevelopment-page.html">Program</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="onDevelopment-page.html"
+                  >Konsultasi</a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="mainpage-article.html">Artikel</a>
+              </li>
+            </ul>
+
+            <div id="container"></div>
+          </div>
         </div>
-        <div class="buttonbox">
-          <div class="login">Login</div>
-          <div class="signup">Sign Up</div>
-        </div>
-      </div>
+      </nav>
     </header>
+
     <section class="bannerbox">
       <div class="imagebanner">
         <img
-          src="./assets/images/Ellipse-BG.png"
+          src="assets/images/Ellipse-BG.png"
           alt="elipse"
           class="imgelipse"
         />
         <img
-          src="./assets/images/doctor-with-tablet-and-phone.png"
+          src="assets/images/doctor-with-tablet-and-phone.png"
           alt="doctor"
           class="imgdoctor"
         />
@@ -47,6 +91,7 @@
         </div>
       </div>
     </section>
+
     <section class="programbox">
       <div class="programphrase">
         <div class="programphrase1">Eksplorasi Berbagai Program Nutrikid</div>
@@ -54,45 +99,63 @@
           Program kami akan menemani perkembangan buah hati anda
         </div>
       </div>
-      <div class="contentprogram">
-        <div class="program1">
-          <img class="imgpg1" src="./assets/images/100days.png" />
-          <div class="boxtext1">
-            <div class="textprogram1">
-              <div class="titleprogram1">
-                1000 Hari Pertama : Panduan Mengasuh Anak
-              </div>
-              <div class="textisi1">Nutrisi Bagi Ibu Menyusui</div>
-              <div class="textisi1">Rp 500.000</div>
-            </div>
+      <div class="card-group contentprogram">
+        <div class="card program1">
+          <img
+            src="assets/images/program/100days.png"
+            class="card-img-top imgpg1"
+            alt="Baby"
+          />
+          <div class="card-body">
+            <h5 class="card-title titleprogram1">
+              1000 Hari Pertama : Panduan Mengasuh
+            </h5>
+            <p class="card-text textisi">
+              Perawatan terbaik selama 1000 hari pertama.
+            </p>
+          </div>
+          <div class="card-footer harga">
+            <small class="text-body-secondary">Rp 500.000</small>
           </div>
         </div>
-        <div class="program1">
-          <img class="imgpg1" src="./assets/images/100days.png" />
-          <div class="boxtext1">
-            <div class="textprogram1">
-              <div class="titleprogram1">
-                1000 Hari Pertama : Panduan Mengasuh Anak
-              </div>
-              <div class="textisi1">Nutrisi Bagi Ibu Menyusui</div>
-              <div class="textisi1">Rp 500.000</div>
-            </div>
+        <div class="card program1">
+          <img
+            src="assets/images/program/baby-food.jpg"
+            class="card-img-top imgpg1"
+            alt="Baby food"
+          />
+          <div class="card-body">
+            <h5 class="card-title titleprogram1">Makanan Sehat untuk Anak</h5>
+            <p class="card-text textisi">
+              Merencanakan dan menyiapkan makanan bergizi untuk anak-anak.
+            </p>
+          </div>
+          <div class="card-footer harga">
+            <small class="text-body-secondary">Rp 300.000</small>
           </div>
         </div>
-        <div class="program1">
-          <img class="imgpg1" src="./assets/images/100days.png" />
-          <div class="boxtext1">
-            <div class="textprogram1">
-              <div class="titleprogram1">
-                1000 Hari Pertama : Panduan Mengasuh Anak
-              </div>
-              <div class="textisi1">Nutrisi Bagi Ibu Menyusui</div>
-              <div class="textisi1">Rp 500.000</div>
-            </div>
+        <div class="card program1">
+          <img
+            src="assets/images/program/nutrisi-ibu.jfif"
+            class="card-img-top imgpg1"
+            alt="Pregnant mom"
+          />
+          <div class="card-body">
+            <h5 class="card-title titleprogram1">
+              Pemenuhan Nutrisi Pascapersalinan dan perawatan diri
+            </h5>
+            <p class="card-text textisi">
+              Cara memenuhi kebutuhan nutrisi ibu dan pemulihan pasca
+              melahirkan.
+            </p>
+          </div>
+          <div class="card-footer harga">
+            <small class="text-body-secondary">Gratis</small>
           </div>
         </div>
       </div>
     </section>
+
     <section class="artikelbox">
       <div class="artikelphrase">
         <div class="artikelphrase1">Eksplorasi Artikel dari Para Ahli</div>
@@ -101,79 +164,17 @@
           pada bidangnya
         </div>
       </div>
-      <div class="contentartikel">
-        <div class="artikel1">
-          <img class="imgart1" src="./assets/images/Artikel1.png" />
-          <div class="textartikel1">
-            <div class="penulisartikel1"><b>dr. Lana Del Reyi, (Sp.OG)</b></div>
-            <div class="tanggalartikel1">07 September 2023</div>
-            <div class="judulartikel1">
-              Memahami Hormon Kehamilan: Proses yang Ajaib dalam Tubuh Seorang
-              Wanita
-            </div>
-            <div class="briefartikel1">
-              Kehamilan adalah salah satu tahap paling istimewa dalam kehidupan
-              seorang wanita. Saat seorang wanita hamil, tubuhnya mengalami
-              sejumlah perubahan yang luar biasa untuk mendukung pertumbuhan dan
-              perkembangan janin. Di balik semua ini, terdapat jaringan hormon
-              yang memainkan peran kunci dalam menjaga kehamilan.
-            </div>
-          </div>
-        </div>
-        <div class="smallartikelbox">
-          <div class="row1">
-            <div class="artikel2">
-              <img class="imgart2" src="./assets/images/Artikel1.png" />
-              <div class="textartikel2">
-                <div class="penulisartikel2">Ratih Pratiwi Putri, M.Gizi</div>
-                <div class="tanggalartikel2">07 September 2023</div>
-                <div class="judulartikel2">
-                  Pentingnya Gizi Seimbang dalam Kesehatan dan Kesejahteraan
-                </div>
-              </div>
-            </div>
-            <div class="artikel2">
-              <img class="imgart2" src="./assets/images/Artikel1.png" />
-              <div class="textartikel2">
-                <div class="penulisartikel2">Ratih Pratiwi Putri, M.Gizi</div>
-                <div class="tanggalartikel2">07 September 2023</div>
-                <div class="judulartikel2">
-                  Pentingnya Gizi Seimbang dalam Kesehatan dan Kesejahteraan
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row1">
-            <div class="artikel2">
-              <img class="imgart2" src="./assets/images/Artikel1.png" />
-              <div class="textartikel2">
-                <div class="penulisartikel2">Ratih Pratiwi Putri, M.Gizi</div>
-                <div class="tanggalartikel2">07 September 2023</div>
-                <div class="judulartikel2">
-                  Pentingnya Gizi Seimbang dalam Kesehatan dan Kesejahteraan
-                </div>
-              </div>
-            </div>
-            <div class="artikel2">
-              <img class="imgart2" src="./assets/images/Artikel1.png" />
-              <div class="textartikel2">
-                <div class="penulisartikel2">Ratih Pratiwi Putri, M.Gizi</div>
-                <div class="tanggalartikel2">07 September 2023</div>
-                <div class="judulartikel2">
-                  Pentingnya Gizi Seimbang dalam Kesehatan dan Kesejahteraan
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="artikellabel">
-          <div class="viewlabel">
-            <div class="dotbox"></div>
-            <div class="most-viewed">Most Viewed</div>
-          </div>
+      <div class="row card-box">
+        <div id="group-big" class="col-xl-6 col-md-12 mb-4"></div>
+        <div class="col-xl-6 col-md-12 mb-4">
+          <div
+            id="group-small"
+            class="card-group row row-cols-1 row-cols-md-2 g-4"
+          ></div>
         </div>
       </div>
     </section>
+
     <section class="testimonibox">
       <div class="testimoni">Testimoni</div>
       <p id="description">
@@ -181,43 +182,43 @@
         Mencegah Stunting di Indonesia dengan Konsultasi Gizi, informasi
         makanan, serta program-program pelatihan untuk orang tua.”
       </p>
-      <div class="contentbox">
-        <div class="contenttestimoni">
-          <div class="testimoni1">
+      <div class="contentbox container-fluid">
+        <div class="contenttestimoni row">
+          <div class="testimoni1 col">
             <div class="texttestimoni1">
               “Nutrikid membantu saya dalam memahami nutrisi untuk bayi.
               Terimakasih Nutrifood, informasinya sangat membantu”
             </div>
             <div class="deskripsiuser">
-              <img class="imgtestimoni" src="./assets/images/cherish.jpg" />
+              <img class="imgtestimoni" src="assets/images/cherish.jpg" />
+              <div class="namauser">
+                <div class="nikita">Mita</div>
+                <div class="ibu-rumah-tangga">Ibu Rumah Tangga</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimoni1 col">
+            <div class="texttestimoni1">
+              “Nutrikid membantu saya dalam memahami nutrisi untuk bayi.
+              Terimakasih Nutrifood, informasinya sangat membantu”
+            </div>
+            <div class="deskripsiuser">
+              <img class="imgtestimoni" src="assets/images/cherish.jpg" />
               <div class="namauser">
                 <div class="nikita">Nikita</div>
                 <div class="ibu-rumah-tangga">Ibu Rumah Tangga</div>
               </div>
             </div>
           </div>
-          <div class="testimoni1">
+          <div class="testimoni1 col">
             <div class="texttestimoni1">
               “Nutrikid membantu saya dalam memahami nutrisi untuk bayi.
               Terimakasih Nutrifood, informasinya sangat membantu”
             </div>
             <div class="deskripsiuser">
-              <img class="imgtestimoni" src="./assets/images/cherish.jpg" />
+              <img class="imgtestimoni" src="assets/images/cherish.jpg" />
               <div class="namauser">
-                <div class="nikita">Nikita</div>
-                <div class="ibu-rumah-tangga">Ibu Rumah Tangga</div>
-              </div>
-            </div>
-          </div>
-          <div class="testimoni1">
-            <div class="texttestimoni1">
-              “Nutrikid membantu saya dalam memahami nutrisi untuk bayi.
-              Terimakasih Nutrifood, informasinya sangat membantu”
-            </div>
-            <div class="deskripsiuser">
-              <img class="imgtestimoni" src="./assets/images/cherish.jpg" />
-              <div class="namauser">
-                <div class="nikita">Nikita</div>
+                <div class="nikita">Dewi</div>
                 <div class="ibu-rumah-tangga">Ibu Rumah Tangga</div>
               </div>
             </div>
@@ -225,116 +226,132 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="tentang">
-        <div class="nutrikiddetails">
-          <div class="alamatbox">
-            <img
-              class="logo-footer"
-              width="256"
-              height="64"
-              viewBox="0 0 256 64"
-              fill="none"
-              src="./assets/icon/logo-nutrikid-text.png"
-            />
 
-            <div class="alamatnutrikid">
-              XYZ Tower<br />Jl. Kemana Saja No. 15<br />Jakarta
+    <!-- 
+    <footer id="footer" class="footer-1">
+      <div class="main-footer widgets-dark typo-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="widget subscribe no-box">
+                <img
+                  class="img-fluid logo-footer"
+                  src="assets/images/logo-nutrikid-text.png"
+                  alt="logofooter"
+                />
+                <p>XYZ Tower</p>
+                <p>Jl. Kemana Saja No. 15</p>
+                <p>Jakarta</p>
+              </div>
             </div>
-          </div>
-          <div class="aboutlist">
-            <div class="about">About</div>
-            <div class="list1">
-              <div class="textlist1">FAQ</div>
-              <div class="textlist1">Syarat &amp; Ketentuan</div>
-              <div class="textlist1">Kebijakan Privasi</div>
-              <div class="textlist1">Kebijakan Finansial</div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="widget no-box">
+                <h5 class="widget-title">About<span></span></h5>
+                <ul class="thumbnail-widget">
+                  <li>
+                    <div class="thumb-content"><a href="#.">FAQ</a></div>
+                  </li>
+                  <li>
+                    <div class="thumb-content">
+                      <a href="#.">Syarat dan Ketentuan</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="thumb-content">
+                      <a href="#.">Kebijakan Privasi</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="thumb-content">
+                      <a href="#.">Kebijakan Finansial</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="aboutlist">
-            <div class="about">Collaboration</div>
-            <div class="list1">
-              <div class="textlist1">Karir</div>
-              <div class="textlist1">Kerjasama &amp; Ketentuan</div>
-              <div class="textlist1">Membership</div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="widget no-box">
+                <h5 class="widget-title">Collaboration<span></span></h5>
+                <ul class="thumbnail-widget">
+                  <li>
+                    <div class="thumb-content"><a href="#.">Karir</a></div>
+                  </li>
+                  <li>
+                    <div class="thumb-content"><a href="#.">Kerjasama</a></div>
+                  </li>
+                  <li>
+                    <div class="thumb-content"><a href="#.">Membership</a></div>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="contactlist">
-            <div class="about">Contact Us</div>
-            <div class="textlist1">Email : customerservice@nutrikid.com</div>
-            <div class="textlist1">Phone : +621 234 567 890</div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="widget no-box">
+                <h5 class="widget-title">Contact Us<span></span></h5>
+                <p>
+                  <a href="mailto:info@domain.com" title="glorythemes"
+                    >Email: nutrikid@gmail.com</a
+                  >
+                </p>
+                <p>Phone : +621 234 567 890</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="credit">
-          <div class="publish">Nutrikid Publishing 2023</div>
-          <div class="social-icons">
-            <a href="https://skilvul.com" id="link"
-              ><img
-                class="skilvul"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                src="./assets/icon/skillvul.png"
-            /></a>
-            <a href="https://instagram.com"
-              ><img
-                class="instagram"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                src="./assets/icon/instagram.png"
-            /></a>
 
-            <a href="https://facebook.com"
-              ><img
-                class="facebook"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                src="./assets/icon/facebook.png"
-            /></a>
-
-            <a href="https://linkedin.com"
-              ><img
-                class="linkedin"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                src="./assets/icon/linkedin.png"
-            /></a>
+        <div class="footer-copyright">
+          <div class="container">
+            <div class="row justify-content-between copyright">
+              <div class="col-6 ol-sm-3 text-left">
+                <p>Copyright Nutrikid © 2023. All rights reserved.</p>
+              </div>
+              <div class="col-6 col-sm-3 text-right">
+                <ul class="social-footer2">
+                  <li class="">
+                    <a title="instagram" target="_blank" href="youtube.com"
+                      ><img
+                        alt="youtube"
+                        width="30"
+                        height="30"
+                        src="assets/images/instagram.png"
+                    /></a>
+                  </li>
+                  <li class="">
+                    <a href="" target="_blank" title="Facebook"
+                      ><img
+                        alt="Facebook"
+                        width="30"
+                        height="30"
+                        src="assets/images/facebook.png"
+                    /></a>
+                  </li>
+                  <li class="">
+                    <a href="" target="_blank" title="Linkedin"
+                      ><img
+                        alt="Twitter"
+                        width="30"
+                        height="30"
+                        src="assets/images/linkedin.png"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-    <section class="contactPage">
-      <h1 class="contact">Hubungi Kami</h1>
-      <p class="subcon">
-        Ingin lebih tau tentang nutrikid? Ayo hubungi kami dengan mengisi form
-        dibawah ini !
-      </p>
-      <form id="contactForm">
-        <p class="isiform">Nama</p>
-        <input type="text" id="name" />
-        <p class="isiform">Kota/Kabupaten</p>
-        <input type="text" id="city" />
-        <p class="isiform">Alamat Email</p>
-        <input type="text" id="email" />
-        <p class="isiform">Zip-Code</p>
-        <input type="text" id="zip-code" />
-        <label id="check"
-          >Dengan ini saya menyatakan data yang diisi pada form ini adalah benar
-          dan telah sesuai
-        </label>
-        <input type="checkbox" id="status" />
-        <button type="submit" id="submit-form">Submit</button>
-        <div id="warning"></div>
-      </form>
-    </section>
+    </footer> -->
 
-    <script src="script.js"></script>
+    <nutrikid-footer></nutrikid-footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/Header-footer-terpisah/footer.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

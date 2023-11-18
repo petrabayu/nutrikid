@@ -23,16 +23,77 @@ a {
 }
 .nutrikid-icon-size {
   font-size: 2rem;
+  color: var(--secondary-color);
 }
 
 .bi:hover {
   color: var(--neutral-dark-color);
+}
+.nutrikid-no-btn {
+  border: none;
+  background-color: transparent;
+  color: var(--secondary-color);
+  padding: 0;
+  margin: 0;
+}
+
+/* .nutrikid-btn-primary {
+  background: #ab87ff;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+} */
+
+.buttonbox {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-end;
+  width: 201px;
+  height: 46px;
+}
+
+.login {
+  color: #7a7a7a;
+  text-align: left;
+  font: 700 20px/150% "noto sans", sans-serif;
+  cursor: pointer;
+}
+
+.login a:link,
+.signup a:link {
+  text-decoration: none;
+}
+
+.login a,
+.signup a {
+  color: #ffffff;
+}
+
+.signup {
+  background-color: #ab87ff;
+  border-radius: 12px;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  width: 123.5px;
+  color: #ffffff;
+  text-align: left;
+  font: 700 20px/150% "noto sans", sans-serif;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
   .nutrikid-container {
     width: 45rem;
   }
+}
+
+li {
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
